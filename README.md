@@ -25,7 +25,7 @@ tidy-parser -i example.html -o example.json
 
 ```
 {
-    "type: "pdf",
-    "text": "text"
+    "type: "html",
+    "text": "body"
 }
 ```
