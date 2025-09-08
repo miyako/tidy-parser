@@ -21,7 +21,7 @@ static void usage(void)
 extern OPTARG_T optarg;
 extern int optind, opterr, optopt;
 
-#ifdef WIN32
+#ifdef _WIN32
 OPTARG_T optarg = 0;
 int opterr = 1;
 int optind = 1;
@@ -92,46 +92,6 @@ static void document_to_json(Document& document, std::string& text, bool rawText
         text = Json::writeString(writer, documentNode);
     }
 }
-
-#ifdef _WIN32
-static std::string wchar_to_utf8(const wchar_t* wstr) {
-    if (!wstr) return std::string();
-
-    // Get required buffer size in bytes
-    int size_needed = WideCharToMultiByte(
-        CP_UTF8,            // convert to UTF-8
-        0,                  // default flags
-        wstr,               // source wide string
-        -1,                 // null-terminated
-        nullptr, 0,         // no output buffer yet
-        nullptr, nullptr
-    );
-
-    if (size_needed <= 0) return std::string();
-
-    // Allocate buffer
-    std::string utf8str(size_needed, 0);
-
-    // Perform conversion
-    WideCharToMultiByte(
-        CP_UTF8,
-        0,
-        wstr,
-        -1,
-        &utf8str[0],
-        size_needed,
-        nullptr,
-        nullptr
-    );
-
-    // Remove the extra null terminator added by WideCharToMultiByte
-    if (!utf8str.empty() && utf8str.back() == '\0') {
-        utf8str.pop_back();
-    }
-
-    return utf8str;
-}
-#endif
 
 static void print_text(TidyDoc tdoc, TidyNode tnode, std::string& text) {
     
@@ -224,9 +184,13 @@ int main(int argc, OPTARG_T argv[]) {
     tidyOptSetBool(tdoc, TidyDropEmptyElems, yes);
     tidyOptSetBool(tdoc, TidyDropEmptyParas, yes);
     tidyOptSetBool(tdoc, TidyDropPropAttrs, yes);
-    tidyOptSetBool(tdoc, TidyAsciiChars, yes);
+
+    tidyOptSetBool(tdoc, TidyIndentContent, no);
     tidyOptSetInt(tdoc, TidyIndentSpaces, 0);
-    tidyOptSetBool(tdoc, TidyPreserveEntities, yes);
+
+    tidyOptSetBool(tdoc, TidyQuoteAmpersand, no);
+    tidyOptSetBool(tdoc, TidyAsciiChars, no);
+    tidyOptSetBool(tdoc, TidyPreserveEntities, no);
     tidyOptSetBool(tdoc, TidyNumEntities, yes);
     
     if(tidyParseString(tdoc, (const char *)html_data.data()) >= 0) {
