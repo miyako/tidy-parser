@@ -7,7 +7,7 @@
 * the source code of this CLI tool is licensed under the MIT license.
 * see [tidy-html5](https://github.com/htacg/tidy-html5/blob/next/README/LICENSE.md) for the licensing of **tidy-html5** (W3C).
  
-# pdfium-parser
+# tidy-parser
 CLI tool to extract text from HTML
 
 ## usage
