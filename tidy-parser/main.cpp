@@ -167,7 +167,8 @@ int main(int argc, OPTARG_T argv[]) {
     Document document;
     
     TidyDoc tdoc = tidyCreate();
-    TidyBuffer errbuf = {0};
+    TidyBuffer errbuf;
+    tidyBufInit(&errbuf);
     
     tidyOptSetBool(tdoc, TidyXhtmlOut, yes);
     tidyOptSetBool(tdoc, TidyXmlOut, no);

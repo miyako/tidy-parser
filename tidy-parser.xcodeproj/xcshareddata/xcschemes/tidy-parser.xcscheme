@@ -57,7 +57,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/miyako/Desktop/manual.html"
+            argument = "/Users/miyako/Documents/samples/html/Current-record_4880453.999-886.en.html"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
@@ -66,7 +66,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-r"
-            isEnabled = "NO">
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-o"
