@@ -10,22 +10,21 @@
 # tidy-parser
 CLI tool to extract text from HTML
 
-## usage
-
 ```
-tidy-parser -i example.html -o example.json
+text extractor for html documents
 
- -i path    : document to parse
- -o path    : text output (default=stdout)
- -          : use stdin for input
- -r         : raw text output (default=json)
+ -i path: document to parse
+ -o path: text output (default=stdout)
+ -: use stdin for input
+ -r: raw text output (default=json)
 ```
 
-## output (JSON)
+## JSON
 
-```
-{
-    "type: "html",
-    "text": "body"
-}
-```
+|Property|Level|Type|Description|
+|-|-|-|-|
+|document|0|||
+|document.type|0|Text||
+|document.pages|0|Array||
+|document.pages[].paragraphs|1|Array||
+|document.pages[].paragraphs[].text|2|Text||
