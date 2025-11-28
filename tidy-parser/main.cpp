@@ -85,8 +85,14 @@ static void document_to_json(Document& document, std::string& text, bool rawText
     }else{
         Json::Value documentNode(Json::objectValue);
         documentNode["type"] = document.type;
-        documentNode["text"] = document.text;
-
+        documentNode["pages"] = Json::arrayValue;
+        Json::Value pageNode(Json::objectValue);
+        pageNode["paragraphs"] = Json::arrayValue;
+        Json::Value paragraphNode(Json::objectValue);
+        paragraphNode["text"] = document.text;
+        pageNode["paragraphs"].append(paragraphNode);
+        documentNode["pages"].append(pageNode);
+        
         Json::StreamWriterBuilder writer;
         writer["indentation"] = "";
         text = Json::writeString(writer, documentNode);

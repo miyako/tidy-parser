@@ -1,0 +1,27 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/miyako/Documents/GitHub/tidy-parser/macOS/tidy-parser'
+relocations:
+  - { offset: 0x6F08, size: 0x8, addend: 0x0, symName: __ZNSt3__124__put_character_sequenceB8ne200100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m, symObjAddr: 0x103B, symBinAddr: 0x1000017ED, symSize: 0x150 }
+  - { offset: 0x879F, size: 0x8, addend: 0x0, symName: __ZNSt3__120__throw_length_errorB8ne200100EPKc, symObjAddr: 0xB44, symBinAddr: 0x1000012F6, symSize: 0x4C }
+  - { offset: 0x924F, size: 0x8, addend: 0x0, symName: __ZNSt3__116__pad_and_outputB8ne200100IcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_, symObjAddr: 0x118B, symBinAddr: 0x10000193D, symSize: 0x10B }
+  - { offset: 0xCF26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000007C0, symSize: 0x8AF }
+  - { offset: 0xE7FB, size: 0x8, addend: 0x0, symName: __ZNSt3__16vectorIhNS_9allocatorIhEEEC2B8ne200100Em, symObjAddr: 0xA90, symBinAddr: 0x100001250, symSize: 0x64 }
+  - { offset: 0xEC41, size: 0x8, addend: 0x0, symName: __ZNSt3__16vectorIhNS_9allocatorIhEEE18__insert_with_sizeB8ne200100INS_11__wrap_iterIPhEES7_EES7_NS5_IPKhEET_T0_l, symObjAddr: 0xBB4, symBinAddr: 0x100001366, symSize: 0x266 }
+  - { offset: 0xF9F9, size: 0x8, addend: 0x0, symName: __ZNSt3__16vectorIhNS_9allocatorIhEEE8__appendEm, symObjAddr: 0xE1A, symBinAddr: 0x1000015CC, symSize: 0x102 }
+  - { offset: 0xFEBD, size: 0x8, addend: 0x0, symName: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE20__throw_length_errorB8ne200100Ev, symObjAddr: 0xF1C, symBinAddr: 0x1000016CE, symSize: 0x10 }
+  - { offset: 0x10189, size: 0x8, addend: 0x0, symName: __ZL10print_textPK8_TidyDocPK9_TidyNodeRNSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEE, symObjAddr: 0x96C, symBinAddr: 0x10000112C, symSize: 0xF0 }
+  - { offset: 0x105A6, size: 0x8, addend: 0x0, symName: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100ILi0EEEPKc, symObjAddr: 0xFB0, symBinAddr: 0x100001762, symSize: 0x8B }
+  - { offset: 0x10861, size: 0x8, addend: 0x0, symName: __ZNSt3__124__put_character_sequenceB8ne200100IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m, symObjAddr: 0x103B, symBinAddr: 0x1000017ED, symSize: 0x150 }
+  - { offset: 0x1089C, size: 0x8, addend: 0x0, symName: __ZL5usagev, symObjAddr: 0x8AF, symBinAddr: 0x10000106F, symSize: 0xBD }
+  - { offset: 0x10915, size: 0x8, addend: 0x0, symName: __ZL10print_textPK8_TidyDocPK9_TidyNodeRNSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEE, symObjAddr: 0x96C, symBinAddr: 0x10000112C, symSize: 0xF0 }
+  - { offset: 0x10926, size: 0x8, addend: 0x0, symName: __ZN8DocumentD1Ev, symObjAddr: 0xA5C, symBinAddr: 0x10000121C, symSize: 0x34 }
+  - { offset: 0x10C2E, size: 0x8, addend: 0x0, symName: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100EPKcm, symObjAddr: 0xF2C, symBinAddr: 0x1000016DE, symSize: 0x84 }
+  - { offset: 0x11040, size: 0x8, addend: 0x0, symName: __ZNSt3__16vectorIhNS_9allocatorIhEEE11__vallocateB8ne200100Em, symObjAddr: 0xAF4, symBinAddr: 0x1000012B4, symSize: 0x32 }
+  - { offset: 0x11119, size: 0x8, addend: 0x0, symName: __ZNSt3__16vectorIhNS_9allocatorIhEEE20__throw_length_errorB8ne200100Ev, symObjAddr: 0xB26, symBinAddr: 0x1000012E6, symSize: 0x10 }
+  - { offset: 0x11145, size: 0x8, addend: 0x0, symName: __ZNSt3__16vectorIhNS_9allocatorIhEEE20__throw_length_errorB8ne200100Ev, symObjAddr: 0xB26, symBinAddr: 0x1000012E6, symSize: 0x10 }
+  - { offset: 0x11168, size: 0x8, addend: 0x0, symName: __ZNSt12length_errorC1B8ne200100EPKc, symObjAddr: 0xB90, symBinAddr: 0x100001342, symSize: 0x24 }
+  - { offset: 0x116BB, size: 0x8, addend: 0x0, symName: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE20__throw_length_errorB8ne200100Ev, symObjAddr: 0xF1C, symBinAddr: 0x1000016CE, symSize: 0x10 }
+  - { offset: 0x116D3, size: 0x8, addend: 0x0, symName: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100EPKcm, symObjAddr: 0xF2C, symBinAddr: 0x1000016DE, symSize: 0x84 }
+  - { offset: 0x11A57, size: 0x8, addend: 0x0, symName: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne200100Emc, symObjAddr: 0x1296, symBinAddr: 0x100001A48, symSize: 0x84 }
+...
